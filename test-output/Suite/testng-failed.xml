@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.docker.YahooTest2">
+        <methods>
+          <include name="validate_Google_Title"/>
+        </methods>
+      </class> <!-- com.docker.YahooTest2 -->
+      <class name="com.docker.GoogleTest">
+        <methods>
+          <include name="validate_Google_Title"/>
+        </methods>
+      </class> <!-- com.docker.GoogleTest -->
+      <class name="com.docker.GmailTest3">
+        <methods>
+          <include name="stop_docker"/>
+          <include name="validate_Google_Title"/>
+          <include name="start_Docker"/>
+        </methods>
+      </class> <!-- com.docker.GmailTest3 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
